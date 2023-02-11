@@ -47,3 +47,6 @@ if page.mathjax2
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
+
+if page.mermaid == true
+  script(type='text/javascript', src='https://cdn.bootcdn.net/ajax/libs/mermaid/' + config.mermaid.version + '/mermaid.min.js')
